@@ -1,5 +1,18 @@
-<script setup>
+<script>
 import axios from 'axios';
+import { store } from './store.js'
+import BreweryCard from './components/BreweryCard.vue';
+
+export default {
+  components: {
+    BreweryCard
+  },
+  data() {
+    return {
+      store,
+    }
+  },
+}
 
 </script>
 
@@ -7,7 +20,7 @@ import axios from 'axios';
   <main>
     <h1>Scotland's Best Breweries</h1>
     <div id="wrapper">
-      <card />
+      <BreweryCard />
     </div>
   </main>
 </template>
