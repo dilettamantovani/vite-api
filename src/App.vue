@@ -43,5 +43,10 @@ export default {
 #wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+h1 {
+  color: #B45309;
 }
 </style>
