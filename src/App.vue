@@ -26,7 +26,7 @@ export default {
       let address = this.store.breweriesAPI;
 
       if (this.store.searchString.length) {
-        address += `&by_postal=${this.store.searchString}`;
+        address += `&by_postal=${this.store.searchString.toUpperCase()}`;
       }
 
       console.log('Get: ', address);
