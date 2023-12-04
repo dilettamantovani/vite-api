@@ -31,7 +31,7 @@ export default {
 
       console.log('Get: ', address);
 
-      axios.get(this.store.breweriesAPI).then(result => {
+      axios.get(address).then(result => {
         this.store.breweries = result.data;
       }).catch(error => {
         this.store.breweries = [];
